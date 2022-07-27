@@ -43,8 +43,8 @@ Feature: End to End Hotel Booking Validaiton
         |roomType       |roomCategory       |
         |Premium Room   |Breakfast + Dinner |
         And enter contact information
-        |title  |firstName  |lastName   |email              |mobileNo   |
-        |Mrs    |Bee Fateema|T Shiras   |bts@gmail.com  |9876543219 | 
+        |title  |firstName  |lastName   |email         |mobileNo   |
+        |Mrs    |Bee Fateema|T Shiras   |bts@gmail.com |9876543219 | 
         And select pay now
         Then verify total Due
 
