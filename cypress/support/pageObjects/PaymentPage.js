@@ -13,10 +13,11 @@ class PaymentPage {
       .scrollIntoView()
       .should((total) => {
         const amount = total.text();
-        // totalA = amount.split(",");
-        // amount = totalA[0] + totalA[1];
         expect(amount).to.equal(totalAmount);
       });
   }
 }
 export default PaymentPage;
+
+// totalA = amount.split(",");
+// amount = totalA[0] + totalA[1];
