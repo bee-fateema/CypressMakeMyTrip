@@ -35,13 +35,13 @@ Feature: End to End Hotel Booking Validaiton
         |Goa, India|Fri, 26 Aug 2022|Sat, 27 Aug 2022|1     |
         When I choose filter
         |modificationFilter |
-        |Free Breakfast|
+        |Free Breakfast     |
         Then select hotel and verify hotel details
-        |hotelName|
-        |Riva Beach|
+        |hotelName  |
+        |Riva Beach |
         When I select room
-        |roomType   |roomCategory       |
-        |Premium Room|Breakfast + Dinner |
+        |roomType       |roomCategory       |
+        |Premium Room   |Breakfast + Dinner |
         And enter contact information
         |title  |firstName  |lastName   |email              |mobileNo   |
         |Mrs    |Bee        |Shiras     |bshiras@gmail.com  |9876543219 | 

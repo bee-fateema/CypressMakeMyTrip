@@ -31,7 +31,7 @@ class BasePage {
       const placeText = element.text();
       cy.log(placeText + " - ");
       if (placeText.includes(city)) {
-        cy.wrap(element).click();
+        cy.wrap(element).click({ force: true });
         return false;
       }
     });
@@ -45,7 +45,7 @@ class BasePage {
       const adultCount = element.text();
       cy.log(adultCount + " - ");
       if (adultCount.includes(adults)) {
-        cy.wrap(element).click();
+        cy.wrap(element).click({ force: true });
         return false;
       }
     });
