@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-07-27T05:17:50.035Z",
+    "end": "2022-07-27T05:18:38.052Z",
+    "duration": 48017,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "950af03f-526a-43c6-bd59-394dfcfa299d",
+      "title": "",
+      "fullFile": "cypress\\integration\\BDD\\makemytrip.feature",
+      "file": "cypress\\integration\\BDD\\makemytrip.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2e7f8a16-9842-4ee8-bf92-be6f8d373eab",
+          "title": "End to End Hotel Booking Validaiton",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Booking hotel with specific room selection",
+              "fullTitle": "End to End Hotel Booking Validaiton Booking hotel with specific room selection",
+              "timedOut": null,
+              "duration": 44500,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element:\n\n`<p class=\"locusLabel appendBottom5\">Goa, India</p>`\n\nis being covered by another element:\n\n`<iframe title=\"notification-frame-b8a66723\" name=\"notification-frame-b8a66723\" id=\"webklipper-publisher-widget-container-notification-frame\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; visibility: visible; height: 100%; width: 100%; transform: translate(1000px, 1000px);\" data-notification-layout-id=\"~184fc0b7\" data-notification-layout-name=\"modal\"></iframe>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element:\n\n`<p class=\"locusLabel appendBottom5\">Goa, India</p>`\n\nis being covered by another element:\n\n`<iframe title=\"notification-frame-b8a66723\" name=\"notification-frame-b8a66723\" id=\"webklipper-publisher-widget-container-notification-frame\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; visibility: visible; height: 100%; width: 100%; transform: translate(1000px, 1000px);\" data-notification-layout-id=\"~184fc0b7\" data-notification-layout-name=\"modal\"></iframe>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:162300:78)\n    at ensureDescendents (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:147714:8)\n    at ensureDescendentsAndScroll (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:147721:14)\n    at ensureElIsNotCovered (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:147853:5)\n    at runAllChecks (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:148043:52)\n    at retryActionability (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:148067:16)\n    at tryCatcher (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:10286:29)\n    at whenStable (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:167226:65)\n    at https://www.makemytrip.com/__cypress/runner/cypress_runner.js:166680:14\n    at tryCatcher (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11129:18)\n    at Promise._fulfill (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11073:18)\n    at https://www.makemytrip.com/__cypress/runner/cypress_runner.js:12687:46\nFrom Your Spec Code:\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:212:28)",
+                "diff": null
+              },
+              "uuid": "bdc892a3-ce60-4759-abd8-d98e0edfc378",
+              "parentUUID": "2e7f8a16-9842-4ee8-bf92-be6f8d373eab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bdc892a3-ce60-4759-abd8-d98e0edfc378"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 44500,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

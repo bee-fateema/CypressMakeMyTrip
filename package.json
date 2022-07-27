@@ -1,0 +1,34 @@
+{
+  "name": "cypressassessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "chromeTest": "npm run test -- --headed chrome",
+    "bddTest": "npm run test -- --spec 'cypress/integration/BDD/*.feature'",
+    "frameworkTest": "npm run test -- --spec 'cypress/integration/*'"
+  },
+  "author": "Bee",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress": "^10.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.2.0",
+    "cypress-pipe": "^2.0.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "multiple-cucumber-html-reporter": "^1.21.4",
+    "start-server-and-test": "^1.14.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
