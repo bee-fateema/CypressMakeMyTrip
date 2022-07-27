@@ -11,4 +11,3 @@ jobs:
         with:
           browser: chrome
           record: true
-          spec: cypress/integration/*
