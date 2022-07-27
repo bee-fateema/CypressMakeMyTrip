@@ -12,19 +12,15 @@ const hotelListPage = new HotelListPage();
 const reviewBookingPage = new ReviewBookingPage();
 const paymentPage = new PaymentPage();
 var totalAmount;
-let city,
-  checkInDate,
-  checkOutDate,
-  adults,
-  modificationFilter,
+let roomType,
+  roomCategory,
   hotelName,
   title,
   firstname,
   lastname,
   emailId,
-  roomType,
-  roomCategory,
-  mobileNo;
+  mobileNo,
+  dataValue;
 
 Given("I open MakeMyTrip page", () => {
   basePage.visitHomePage();
@@ -33,25 +29,31 @@ When("I select {string} tab", (tab) => {
   basePage.selectTab(tab);
 });
 And("enter reservation details", (dataTable) => {
-  city = dataTable.rawTable[1][0];
-  checkInDate = dataTable.rawTable[1][1];
-  checkOutDate = dataTable.rawTable[1][2];
-  adults = dataTable.rawTable[1][3];
-  basePage.enterReservationDetails(city, checkInDate, checkOutDate, adults);
+  dataTable.hashes().forEach((element) => {
+    for (var dataName in element) {
+      dataValue = element[dataName];
+      basePage.enterReservationDetails(dataName, dataValue);
+    }
+  });
 });
 And("select search button", () => {
   basePage.SearchBtn();
 });
 Then("verify details", (dataTable) => {
-  city = dataTable.rawTable[1][0];
-  checkInDate = dataTable.rawTable[1][1];
-  checkOutDate = dataTable.rawTable[1][2];
-  adults = dataTable.rawTable[1][3];
-  hotelListPage.verifyBookingDetails(city, checkInDate, checkOutDate, adults);
+  dataTable.hashes().forEach((element) => {
+    for (var dataName in element) {
+      dataValue = element[dataName];
+      hotelListPage.verifyBookingDetails(dataName, dataValue);
+    }
+  });
 });
 When("I choose filter", (dataTable) => {
-  modificationFilter = dataTable.rawTable[1][0];
-  hotelListPage.selectFilters(modificationFilter);
+  dataTable.hashes().forEach((element) => {
+    for (var dataName in element) {
+      dataValue = element[dataName];
+      hotelListPage.selectFilters(dataValue);
+    }
+  });
 });
 Then("select hotel and verify hotel details", (dataTable) => {
   hotelName = dataTable.rawTable[1][0];
@@ -102,6 +104,3 @@ And("select pay now", () => {
 Then("verify total Due", () => {
   paymentPage.verifyTotalAmount(totalAmount);
 });
-
-/*To Try?
-  - multiple dataTable row implementation */

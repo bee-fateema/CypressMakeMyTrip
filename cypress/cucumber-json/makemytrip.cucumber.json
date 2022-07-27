@@ -22,7 +22,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 3211000000
+              "duration": 3759000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 389000000
+              "duration": 360000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 6597000000
+              "duration": 6511000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 4388000000
+              "duration": 9224000000
             }
           },
           {
@@ -104,7 +104,7 @@
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 269000000
+              "duration": 331000000
             }
           },
           {
@@ -120,6 +120,11 @@
                     "cells": [
                       "4 Star"
                     ]
+                  },
+                  {
+                    "cells": [
+                      "Free Cancellation"
+                    ]
                   }
                 ]
               }
@@ -129,7 +134,7 @@
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 4677000000
+              "duration": 9727000000
             }
           },
           {
@@ -143,28 +148,28 @@
                   },
                   {
                     "cells": [
-                      "Ambassador Hotel"
+                      "Ambassador"
                     ]
                   }
                 ]
               }
             ],
             "keyword": "Then ",
-            "line": 18,
+            "line": 19,
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 4336000000
+              "duration": 5534000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 22,
             "name": "I click BOOK THIS NOW",
             "result": {
               "status": "passed",
-              "duration": 1000000000
+              "duration": 444000000
             }
           },
           {
@@ -193,31 +198,31 @@
               }
             ],
             "keyword": "And ",
-            "line": 22,
+            "line": 23,
             "name": "enter contact information",
             "result": {
               "status": "passed",
-              "duration": 8869000000
+              "duration": 7715000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 26,
             "name": "select pay now",
             "result": {
               "status": "passed",
-              "duration": 5977000000
+              "duration": 6163000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
+            "line": 27,
             "name": "verify total Due",
             "result": {
               "status": "passed",
-              "duration": 318000000
+              "duration": 253000000
             }
           }
         ]
@@ -225,7 +230,7 @@
       {
         "id": "end-to-end-hotel-booking-validaiton;booking-hotel-with-specific-room-selection",
         "keyword": "Scenario",
-        "line": 28,
+        "line": 29,
         "name": "Booking hotel with specific room selection",
         "tags": [],
         "type": "scenario",
@@ -237,7 +242,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 7003000000
+              "duration": 6927000000
             }
           },
           {
@@ -247,7 +252,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 559000000
+              "duration": 460000000
             }
           },
           {
@@ -274,21 +279,21 @@
               }
             ],
             "keyword": "And ",
-            "line": 29,
+            "line": 30,
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 5958000000
+              "duration": 6177000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 32,
+            "line": 33,
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 3201000000
+              "duration": 3429000000
             }
           },
           {
@@ -315,11 +320,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 33,
+            "line": 34,
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 269000000
+              "duration": 277000000
             }
           },
           {
@@ -340,11 +345,11 @@
               }
             ],
             "keyword": "When ",
-            "line": 36,
+            "line": 37,
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 4814000000
+              "duration": 5106000000
             }
           },
           {
@@ -365,11 +370,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 39,
+            "line": 40,
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 4821000000
+              "duration": 5575000000
             }
           },
           {
@@ -392,11 +397,11 @@
               }
             ],
             "keyword": "When ",
-            "line": 42,
+            "line": 43,
             "name": "I select room",
             "result": {
               "status": "passed",
-              "duration": 5050000000
+              "duration": 4829000000
             }
           },
           {
@@ -425,31 +430,31 @@
               }
             ],
             "keyword": "And ",
-            "line": 45,
+            "line": 46,
             "name": "enter contact information",
             "result": {
               "status": "passed",
-              "duration": 6588000000
+              "duration": 8354000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
+            "line": 49,
             "name": "select pay now",
             "result": {
               "status": "passed",
-              "duration": 6121000000
+              "duration": 5639000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 49,
+            "line": 50,
             "name": "verify total Due",
             "result": {
               "status": "passed",
-              "duration": 259000000
+              "duration": 299000000
             }
           }
         ]

@@ -10,31 +10,27 @@ class HotelListPage {
     );
     cy.wait(4000);
   }
-  verifyBookingDetails(city, checkInDate, checkOutDate, adults) {
-    cy.get("input#city").should("have.value", city);
-    cy.get("input#checkin").should("have.value", checkInDate);
-    cy.get("input#checkout").should("have.value", checkOutDate);
-    cy.get("input#guest").should("have.value", "1 Room, " + adults + " Adult");
+  verifyBookingDetails(dataName, dataValue) {
+    switch (dataName) {
+      case "city":
+        cy.get("input#city").should("have.value", dataValue);
+        break;
+      case "checkInDate":
+        cy.get("input#checkin").should("have.value", dataValue);
+        break;
+      case "checkOutDate":
+        cy.get("input#checkout").should("have.value", dataValue);
+        break;
+      case "adults":
+        cy.get("input#guest").should(
+          "have.value",
+          "1 Room, " + dataValue + " Adult"
+        );
+        break;
+      default:
+        cy.log("Invalid Column name!!!");
+        break;
+    }
   }
 }
 export default HotelListPage;
-
-// selectHotel() {
-//   var hotelPrice;
-//   cy.get("div[class='listingRowOuter hotelTileDt makeRelative ']").each(
-//     (element, index, list) => {
-//       const hotelText = element.find("span[class='wordBreak']").text();
-//       if (hotelText.includes("Ambassador Hotel")) {
-//         hotelPrice = element.find("p[id='hlistpg_hotel_shown_price']").text();
-//         cy.wrap(element)
-//           .find("a")
-//           .invoke("removeAttr", "target")
-//           .click({ force: true });
-//       }
-//     }
-//   );
-//   return hotelPrice;
-// }
-
-/*To Try?
-  - multiple modification filters */

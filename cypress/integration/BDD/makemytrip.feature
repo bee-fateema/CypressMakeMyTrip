@@ -15,9 +15,10 @@ Feature: End to End Hotel Booking Validaiton
         When I choose filter
         |modificationFilter |
         |4 Star             |
+        |Free Cancellation  |
         Then select hotel and verify hotel details
         |hotelName|
-        |Ambassador Hotel|
+        |Ambassador|
         When I click BOOK THIS NOW
         And enter contact information
         |title  |firstName  |lastName   |email              |mobileNo   |
