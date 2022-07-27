@@ -16,24 +16,25 @@ class HotelListPage {
     cy.get("input#checkout").should("have.value", checkOutDate);
     cy.get("input#guest").should("have.value", "1 Room, " + adults + " Adult");
   }
-  // selectHotel() {
-  //   return cy.get("div[class='listingRowOuter hotelTileDt makeRelative ']");
-  // }
-  // selectHotel() {
-  //   var hotelPrice;
-  //   cy.get("div[class='listingRowOuter hotelTileDt makeRelative ']").each(
-  //     (element, index, list) => {
-  //       const hotelText = element.find("span[class='wordBreak']").text();
-  //       if (hotelText.includes("Ambassador Hotel")) {
-  //         hotelPrice = element.find("p[id='hlistpg_hotel_shown_price']").text();
-  //         cy.wrap(element)
-  //           .find("a")
-  //           .invoke("removeAttr", "target")
-  //           .click({ force: true });
-  //       }
-  //     }
-  //   );
-  //   return hotelPrice;
-  // }
 }
 export default HotelListPage;
+
+// selectHotel() {
+//   var hotelPrice;
+//   cy.get("div[class='listingRowOuter hotelTileDt makeRelative ']").each(
+//     (element, index, list) => {
+//       const hotelText = element.find("span[class='wordBreak']").text();
+//       if (hotelText.includes("Ambassador Hotel")) {
+//         hotelPrice = element.find("p[id='hlistpg_hotel_shown_price']").text();
+//         cy.wrap(element)
+//           .find("a")
+//           .invoke("removeAttr", "target")
+//           .click({ force: true });
+//       }
+//     }
+//   );
+//   return hotelPrice;
+// }
+
+/*To Try?
+  - multiple modification filters */

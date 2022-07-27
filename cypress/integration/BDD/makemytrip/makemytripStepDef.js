@@ -102,3 +102,6 @@ And("select pay now", () => {
 Then("verify total Due", () => {
   paymentPage.verifyTotalAmount(totalAmount);
 });
+
+/*To Try?
+  - multiple dataTable row implementation */
