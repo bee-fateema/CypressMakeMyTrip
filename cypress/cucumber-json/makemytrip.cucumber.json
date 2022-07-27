@@ -8,6 +8,221 @@
     "uri": "makemytrip.feature",
     "elements": [
       {
+        "id": "end-to-end-hotel-booking-validaiton;booking-hotel",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Booking hotel",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open MakeMyTrip page",
+            "result": {
+              "status": "passed",
+              "duration": 17510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I select \"Hotels\" tab",
+            "result": {
+              "status": "passed",
+              "duration": 648000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "city",
+                      "checkInDate",
+                      "checkOutDate",
+                      "adults"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Bangkok",
+                      "Fri Aug 26 2022",
+                      "Sun Aug 28 2022",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 8,
+            "name": "enter reservation details",
+            "result": {
+              "status": "passed",
+              "duration": 10282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "select search button",
+            "result": {
+              "status": "passed",
+              "duration": 17470000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "city",
+                      "checkInDate",
+                      "checkOutDate",
+                      "adults"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Bangkok, Thailand",
+                      "Fri, 26 Aug 2022",
+                      "Sun, 28 Aug 2022",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "verify details",
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "modificationFilter"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "4 Star"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I choose filter",
+            "result": {
+              "status": "passed",
+              "duration": 6551000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "hotelName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Ambassador Hotel"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "select hotel and verify hotel details",
+            "result": {
+              "status": "passed",
+              "duration": 54860000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I click BOOK THIS NOW",
+            "result": {
+              "status": "passed",
+              "duration": 343000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "firstName",
+                      "lastName",
+                      "email",
+                      "mobileNo"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Mrs",
+                      "Bee",
+                      "Shiras",
+                      "bshiras@gmail.com",
+                      "9876543219"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 22,
+            "name": "enter contact information",
+            "result": {
+              "status": "passed",
+              "duration": 10994000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "select pay now",
+            "result": {
+              "status": "passed",
+              "duration": 16028000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "verify total Due",
+            "result": {
+              "status": "passed",
+              "duration": 472000000
+            }
+          }
+        ]
+      },
+      {
         "id": "end-to-end-hotel-booking-validaiton;booking-hotel-with-specific-room-selection",
         "keyword": "Scenario",
         "line": 28,
@@ -22,7 +237,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 6201000000
+              "duration": 27399000000
             }
           },
           {
@@ -32,7 +247,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 750000000
+              "duration": 430000000
             }
           },
           {
@@ -62,8 +277,8 @@
             "line": 29,
             "name": "enter reservation details",
             "result": {
-              "status": "passed",
-              "duration": 7618000000
+              "status": "failed",
+              "error_message": "CypressError: Timed out retrying after 30050ms: `cy.click()` failed because this element:\n\n`<div class=\"hsw_inputBox selectHtlCity  \">...</div>`\n\nis being covered by another element:\n\n`<iframe title=\"notification-frame-b8a66723\" name=\"notification-frame-b8a66723\" id=\"webklipper-publisher-widget-container-notification-frame\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" style=\"display: block; position: fixed; z-index: 16776272; left: -1000px; top: -1000px; visibility: visible; height: 100%; width: 100%; transform: translate(1000px, 1000px);\" data-notification-layout-id=\"~184fc0b7\" data-notification-layout-name=\"modal\"></iframe>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:162300:78)\n    at ensureDescendents (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:147714:8)\n    at ensureDescendentsAndScroll (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:147721:14)\n    at ensureElIsNotCovered (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:147853:5)\n    at runAllChecks (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:148043:52)\n    at retryActionability (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:148067:16)\n    at tryCatcher (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Function.Promise.attempt.Promise.try (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:10286:29)\n    at whenStable (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:167226:65)\n    at https://www.makemytrip.com/__cypress/runner/cypress_runner.js:166680:14\n    at tryCatcher (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11129:18)\n    at Promise._fulfill (https://www.makemytrip.com/__cypress/runner/cypress_runner.js:11073:18)\n    at https://www.makemytrip.com/__cypress/runner/cypress_runner.js:12687:46\nFrom Your Spec Code:\n    at BasePage.enterReservationDetails (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:204:60)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:70:12)\n    at Context.resolveAndRunStepDefinition (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:10934:29)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:10255:35)"
             }
           },
           {
@@ -72,8 +287,7 @@
             "line": 32,
             "name": "select search button",
             "result": {
-              "status": "passed",
-              "duration": 4824000000
+              "status": "skipped"
             }
           },
           {
@@ -103,8 +317,7 @@
             "line": 33,
             "name": "verify details",
             "result": {
-              "status": "passed",
-              "duration": 275000000
+              "status": "skipped"
             }
           },
           {
@@ -128,8 +341,7 @@
             "line": 36,
             "name": "I choose filter",
             "result": {
-              "status": "passed",
-              "duration": 4863000000
+              "status": "skipped"
             }
           },
           {
@@ -153,8 +365,7 @@
             "line": 39,
             "name": "select hotel and verify hotel details",
             "result": {
-              "status": "passed",
-              "duration": 4034000000
+              "status": "skipped"
             }
           },
           {
@@ -180,8 +391,7 @@
             "line": 42,
             "name": "I select room",
             "result": {
-              "status": "passed",
-              "duration": 8882000000
+              "status": "skipped"
             }
           },
           {
@@ -200,9 +410,9 @@
                   {
                     "cells": [
                       "Mrs",
-                      "Bee",
-                      "Shiras",
-                      "bshiras@gmail.com",
+                      "Bee Fateema",
+                      "T Shiras",
+                      "bts@gmail.com",
                       "9876543219"
                     ]
                   }
@@ -213,8 +423,7 @@
             "line": 45,
             "name": "enter contact information",
             "result": {
-              "status": "passed",
-              "duration": 8802000000
+              "status": "skipped"
             }
           },
           {
@@ -223,8 +432,7 @@
             "line": 48,
             "name": "select pay now",
             "result": {
-              "status": "passed",
-              "duration": 6760000000
+              "status": "skipped"
             }
           },
           {
@@ -233,8 +441,7 @@
             "line": 49,
             "name": "verify total Due",
             "result": {
-              "status": "passed",
-              "duration": 302000000
+              "status": "skipped"
             }
           }
         ]

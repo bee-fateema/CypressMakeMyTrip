@@ -4,26 +4,26 @@ Feature: End to End Hotel Booking Validaiton
         Given I open MakeMyTrip page
         When I select "Hotels" tab
 
-    # Scenario: Booking hotel 
-    #     And enter reservation details
-    #     |city   |checkInDate    |checkOutDate   |adults |
-    #     |Bangkok|Fri Aug 26 2022|Sun Aug 28 2022|1      |
-    #     And select search button 
-    #     Then verify details
-    #     |city               |checkInDate        |checkOutDate       |adults |
-    #     |Bangkok, Thailand  |Fri, 26 Aug 2022   |Sun, 28 Aug 2022   |1      |
-    #     When I choose filter
-    #     |modificationFilter |
-    #     |4 Star             |
-    #     Then select hotel and verify hotel details
-    #     |hotelName|
-    #     |Ambassador Hotel|
-    #     When I click BOOK THIS NOW
-    #     And enter contact information
-    #     |title  |firstName  |lastName   |email              |mobileNo   |
-    #     |Mrs    |Bee        |Shiras     |bshiras@gmail.com  |9876543219 | 
-    #     And select pay now
-    #     Then verify total Due
+    Scenario: Booking hotel 
+        And enter reservation details
+        |city   |checkInDate    |checkOutDate   |adults |
+        |Bangkok|Fri Aug 26 2022|Sun Aug 28 2022|1      |
+        And select search button 
+        Then verify details
+        |city               |checkInDate        |checkOutDate       |adults |
+        |Bangkok, Thailand  |Fri, 26 Aug 2022   |Sun, 28 Aug 2022   |1      |
+        When I choose filter
+        |modificationFilter |
+        |4 Star             |
+        Then select hotel and verify hotel details
+        |hotelName|
+        |Ambassador Hotel|
+        When I click BOOK THIS NOW
+        And enter contact information
+        |title  |firstName  |lastName   |email              |mobileNo   |
+        |Mrs    |Bee        |Shiras     |bshiras@gmail.com  |9876543219 | 
+        And select pay now
+        Then verify total Due
 
     Scenario: Booking hotel with specific room selection
         And enter reservation details
@@ -44,7 +44,7 @@ Feature: End to End Hotel Booking Validaiton
         |Premium Room   |Breakfast + Dinner |
         And enter contact information
         |title  |firstName  |lastName   |email              |mobileNo   |
-        |Mrs    |Bee        |Shiras     |bshiras@gmail.com  |9876543219 | 
+        |Mrs    |Bee Fateema|T Shiras   |bts@gmail.com  |9876543219 | 
         And select pay now
         Then verify total Due
 

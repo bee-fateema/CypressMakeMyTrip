@@ -12,7 +12,12 @@
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 Cypress.Commands.add("inputInfo", (infoId, infoValue) => {
-  cy.get(infoId).type(infoValue).should("have.value", infoValue);
+  cy.get(infoId)
+    .wait(0)
+    .focus()
+    .clear()
+    .type(infoValue)
+    .should("have.value", infoValue);
 });
 
 Cypress.Commands.add("hover", (selector) => {

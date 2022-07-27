@@ -25,6 +25,7 @@ class HotelPage {
           const hotelPriceInPage = element
             .find("p[class='font20 blackText latoBlack']")
             .text();
+          expect(hotelPrice).to.equal(hotelPriceInPage);
         });
       }
       if (body.find('span[data-testid="phName"]').length) {
@@ -71,7 +72,6 @@ class HotelPage {
                   .scrollIntoView()
                   .should("be.visible")
                   .invoke("show")
-                  .wait(2000)
                   .click({ force: true });
                 cy.wait(3000);
                 return false;
