@@ -49,10 +49,10 @@ class BasePage {
         return false;
       }
     });
-    cy.get('button[data-cy="submitGuest"]').click({ force: true });
+    cy.forceClick('button[data-cy="submitGuest"]');
   }
   SearchBtn() {
-    cy.get("button[id='hsw_search_button']").click({ force: true });
+    cy.forceClick("button[id='hsw_search_button']");
   }
 }
 

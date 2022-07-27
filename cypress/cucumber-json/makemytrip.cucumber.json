@@ -22,7 +22,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 3388000000
+              "duration": 6201000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 384000000
+              "duration": 750000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 5350000000
+              "duration": 7618000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 2993000000
+              "duration": 4824000000
             }
           },
           {
@@ -104,7 +104,7 @@
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 185000000
+              "duration": 275000000
             }
           },
           {
@@ -129,7 +129,7 @@
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 4515000000
+              "duration": 4863000000
             }
           },
           {
@@ -154,7 +154,7 @@
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 2627000000
+              "duration": 4034000000
             }
           },
           {
@@ -181,7 +181,7 @@
             "name": "I select room",
             "result": {
               "status": "passed",
-              "duration": 7126000000
+              "duration": 8882000000
             }
           },
           {
@@ -214,7 +214,7 @@
             "name": "enter contact information",
             "result": {
               "status": "passed",
-              "duration": 9436000000
+              "duration": 8802000000
             }
           },
           {
@@ -224,7 +224,7 @@
             "name": "select pay now",
             "result": {
               "status": "passed",
-              "duration": 7480000000
+              "duration": 6760000000
             }
           },
           {
@@ -234,7 +234,7 @@
             "name": "verify total Due",
             "result": {
               "status": "passed",
-              "duration": 490000000
+              "duration": 302000000
             }
           }
         ]
