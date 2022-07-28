@@ -31,12 +31,11 @@ class BasePage {
       case "city":
         cy.get('div[class="hsw_inputBox selectHtlCity  "] ').click();
         cy.get('input[placeholder="Enter city/ Hotel/ Area/ Building"]')
-          .wait(0)
           .focus()
           .clear()
           .type(dataValue.slice(0, 3))
           .should("have.value", dataValue.slice(0, 3));
-        cy.wait(2000);
+        cy.wait(1000);
         cy.get(
           "div[id='react-autowhatever-1'] ul[role='listbox'] p[class='locusLabel appendBottom5']"
         ).each((element, index, list) => {

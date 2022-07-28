@@ -3,7 +3,6 @@ class PaymentPage {
 
   verifyDetails() {}
   verifyTotalAmount(totalAmount) {
-    var totalA;
     cy.get('div[class="fare__summary__card append-bottom20 font14"]').contains(
       "Total Due"
     );
@@ -18,6 +17,3 @@ class PaymentPage {
   }
 }
 export default PaymentPage;
-
-// totalA = amount.split(",");
-// amount = totalA[0] + totalA[1];
