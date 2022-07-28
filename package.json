@@ -8,7 +8,8 @@
     "chromeTest": "npm run test -- --headed chrome",
     "bddTest": "npm run test -- --spec 'cypress/integration/BDD/*.feature'",
     "frameworkTest": "npm run test -- --spec 'cypress/integration/*'",
-    "dashboardTest": "npm run test -- --record --key 2d23cd53-263c-48ac-b6bc-988b84485527"
+    "dashboardTest": "npm run test -- --record --key 2d23cd53-263c-48ac-b6bc-988b84485527",
+    "open": "node_modules\\.bin\\cypress open"
   },
   "author": "Bee",
   "license": "ISC",

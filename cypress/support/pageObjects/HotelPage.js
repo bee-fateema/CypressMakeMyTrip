@@ -41,8 +41,18 @@ class HotelPage {
   }
   getBookNowBtn() {
     cy.scrollTo("500px");
-    cy.get("span[class='bookNowBtn ']").trigger("click");
+    // cy.get("span[class='bookNowBtn ']").trigger("click");
 
+    cy.get("div[id='root']").then((body) => {
+      if (body.find('span[class="bookNowBtn "]').length) {
+        cy.get("span[class='bookNowBtn ']").trigger("click");
+      }
+      if (body.find('button[id="detpg_headerright_book_now"]').length) {
+        cy.get("button[id='detpg_headerright_book_now']").click({
+          force: true,
+        });
+      }
+    });
     // div[id='root'] button[id='detpg_headerright_book_now']
   }
   selectRoom(roomType, roomCategory) {

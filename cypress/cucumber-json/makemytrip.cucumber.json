@@ -22,7 +22,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 3759000000
+              "duration": 4111000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 360000000
+              "duration": 445000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 6511000000
+              "duration": 5876000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 9224000000
+              "duration": 4586000000
             }
           },
           {
@@ -104,7 +104,7 @@
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 240000000
             }
           },
           {
@@ -120,11 +120,6 @@
                     "cells": [
                       "4 Star"
                     ]
-                  },
-                  {
-                    "cells": [
-                      "Free Cancellation"
-                    ]
                   }
                 ]
               }
@@ -134,7 +129,7 @@
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 9727000000
+              "duration": 4744000000
             }
           },
           {
@@ -155,21 +150,21 @@
               }
             ],
             "keyword": "Then ",
-            "line": 19,
+            "line": 18,
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 5534000000
+              "duration": 4293000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 22,
+            "line": 21,
             "name": "I click BOOK THIS NOW",
             "result": {
               "status": "passed",
-              "duration": 444000000
+              "duration": 1520000000
             }
           },
           {
@@ -198,31 +193,31 @@
               }
             ],
             "keyword": "And ",
-            "line": 23,
+            "line": 22,
             "name": "enter contact information",
             "result": {
               "status": "passed",
-              "duration": 7715000000
+              "duration": 11503000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
+            "line": 25,
             "name": "select pay now",
             "result": {
               "status": "passed",
-              "duration": 6163000000
+              "duration": 6438000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 26,
             "name": "verify total Due",
             "result": {
               "status": "passed",
-              "duration": 253000000
+              "duration": 621000000
             }
           }
         ]
@@ -230,7 +225,7 @@
       {
         "id": "end-to-end-hotel-booking-validaiton;booking-hotel-with-specific-room-selection",
         "keyword": "Scenario",
-        "line": 29,
+        "line": 28,
         "name": "Booking hotel with specific room selection",
         "tags": [],
         "type": "scenario",
@@ -242,7 +237,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 6927000000
+              "duration": 9575000000
             }
           },
           {
@@ -252,7 +247,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 460000000
+              "duration": 582000000
             }
           },
           {
@@ -279,21 +274,21 @@
               }
             ],
             "keyword": "And ",
-            "line": 30,
+            "line": 29,
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 6177000000
+              "duration": 5286000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 32,
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 3429000000
+              "duration": 3567000000
             }
           },
           {
@@ -320,11 +315,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 34,
+            "line": 33,
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 277000000
+              "duration": 285000000
             }
           },
           {
@@ -338,18 +333,23 @@
                   },
                   {
                     "cells": [
-                      "Free Breakfast"
+                      "MMT Luxe"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Beachfront"
                     ]
                   }
                 ]
               }
             ],
             "keyword": "When ",
-            "line": 37,
+            "line": 36,
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 5106000000
+              "duration": 9399000000
             }
           },
           {
@@ -363,7 +363,7 @@
                   },
                   {
                     "cells": [
-                      "Riva Beach"
+                      "Zuri White"
                     ]
                   }
                 ]
@@ -374,7 +374,7 @@
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 5575000000
+              "duration": 4092000000
             }
           },
           {
@@ -389,8 +389,8 @@
                   },
                   {
                     "cells": [
-                      "Premium Room",
-                      "Breakfast + Dinner"
+                      "Premium",
+                      "Breakfast"
                     ]
                   }
                 ]
@@ -401,7 +401,7 @@
             "name": "I select room",
             "result": {
               "status": "passed",
-              "duration": 4829000000
+              "duration": 5755000000
             }
           },
           {
@@ -434,7 +434,7 @@
             "name": "enter contact information",
             "result": {
               "status": "passed",
-              "duration": 8354000000
+              "duration": 8074000000
             }
           },
           {
@@ -444,7 +444,7 @@
             "name": "select pay now",
             "result": {
               "status": "passed",
-              "duration": 5639000000
+              "duration": 5993000000
             }
           },
           {
@@ -454,7 +454,7 @@
             "name": "verify total Due",
             "result": {
               "status": "passed",
-              "duration": 299000000
+              "duration": 342000000
             }
           }
         ]

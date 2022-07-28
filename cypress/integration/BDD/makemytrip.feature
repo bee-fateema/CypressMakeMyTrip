@@ -15,7 +15,6 @@ Feature: End to End Hotel Booking Validaiton
         When I choose filter
         |modificationFilter |
         |4 Star             |
-        |Free Cancellation  |
         Then select hotel and verify hotel details
         |hotelName|
         |Ambassador|
@@ -35,18 +34,45 @@ Feature: End to End Hotel Booking Validaiton
         |city      |checkInDate     |checkOutDate    |adults|
         |Goa, India|Fri, 26 Aug 2022|Sat, 27 Aug 2022|1     |
         When I choose filter
-        |modificationFilter |
-        |Free Breakfast     |
+        |modificationFilter|
+        |MMT Luxe          |
+        |Beachfront        |
         Then select hotel and verify hotel details
         |hotelName  |
-        |Riva Beach |
+        |Zuri White |
         When I select room
-        |roomType       |roomCategory       |
-        |Premium Room   |Breakfast + Dinner |
+        |roomType|roomCategory|
+        |Premium  |Breakfast   |
         And enter contact information
         |title  |firstName  |lastName   |email         |mobileNo   |
         |Mrs    |Bee Fateema|T Shiras   |bts@gmail.com |9876543219 | 
         And select pay now
         Then verify total Due
 
-    
+
+
+
+
+
+    # Scenario: Booking hotel with specific room selection
+    #     And enter reservation details
+    #     |city   |checkInDate    |checkOutDate   |adults|
+    #     |Goa    |Fri Aug 26 2022|Sat Aug 27 2022|1     |
+    #     And select search button 
+    #     Then verify details
+    #     |city      |checkInDate     |checkOutDate    |adults|
+    #     |Goa, India|Fri, 26 Aug 2022|Sat, 27 Aug 2022|1     |
+    #     When I choose filter
+    #     |modificationFilter |
+    #     |Free Breakfast     |
+    #     Then select hotel and verify hotel details
+    #     |hotelName  |
+    #     |Riva Beach |
+    #     When I select room
+    #     |roomType       |roomCategory       |
+    #     |Premium Room   |Breakfast + Dinner |
+    #     And enter contact information
+    #     |title  |firstName  |lastName   |email         |mobileNo   |
+    #     |Mrs    |Bee Fateema|T Shiras   |bts@gmail.com |9876543219 | 
+    #     And select pay now
+    #     Then verify total Due

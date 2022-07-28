@@ -29,7 +29,10 @@ class BasePage {
   enterReservationDetails(dataName, dataValue) {
     switch (dataName) {
       case "city":
-        cy.get('div[class="hsw_inputBox selectHtlCity  "] ').click();
+        cy.get('div[class="hsw_inputBox selectHtlCity  "] ')
+          .invoke("show")
+          .should("be.visible")
+          .click();
         cy.get('input[placeholder="Enter city/ Hotel/ Area/ Building"]')
           .focus()
           .clear()
