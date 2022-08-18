@@ -1,3 +1,9 @@
+/* Ignore this file.
+   This .js file was created to test if feature 
+   file can detect step definitions placed in 
+   different file under the same folder.
+*/
+
 // "use strict";
 // import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 // import BasePage from "../../../support/pageObjects/BasePage";

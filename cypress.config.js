@@ -1,6 +1,6 @@
 const { defineConfig } = require("cypress");
 const cucumber = require("cypress-cucumber-preprocessor").default;
-
+const dayjs = require("dayjs");
 module.exports = defineConfig({
   projectId: "rvrp7f",
   reporter: "mochawesome",

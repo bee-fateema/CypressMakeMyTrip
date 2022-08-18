@@ -25,7 +25,7 @@ class HotelPage {
           const hotelPriceInPage = element
             .find("p[class='font20 blackText latoBlack']")
             .text();
-          expect(hotelPrice).to.equal(hotelPriceInPage);
+          // expect(hotelPrice).to.equal(hotelPriceInPage);
         });
       }
       if (body.find('span[data-testid="phName"]').length) {
@@ -40,12 +40,13 @@ class HotelPage {
     });
   }
   getBookNowBtn() {
-    cy.scrollTo("500px");
-    // cy.get("span[class='bookNowBtn ']").trigger("click");
-
     cy.get("div[id='root']").then((body) => {
-      if (body.find('span[class="bookNowBtn "]').length) {
-        cy.get("span[class='bookNowBtn ']").trigger("click");
+      if (body.find("a[class='primaryBtn ']").length) {
+        cy.get("a[class='primaryBtn ']").scrollIntoView().trigger("click");
+        // const clickEventHandlerMock = cy.spy();
+        // cy.get("a[class='primaryBtn ']").then((input) => {
+        //   input.on("click", clickEventHandlerMock);
+        // });
       }
       if (body.find('button[id="detpg_headerright_book_now"]').length) {
         cy.get("button[id='detpg_headerright_book_now']").click({
@@ -53,7 +54,6 @@ class HotelPage {
         });
       }
     });
-    // div[id='root'] button[id='detpg_headerright_book_now']
   }
   selectRoom(roomType, roomCategory) {
     cy.get('div[class="rmSelect__card--wrapRow"]').each(
@@ -61,9 +61,9 @@ class HotelPage {
         const roomTypeText = element1
           .find('h2[class="rmType__roomName"]')
           .text();
-        cy.log(roomTypeText);
+        // cy.log(roomTypeText);
         if (roomTypeText.includes(roomType)) {
-          cy.log(roomTypeText + " - " + roomType);
+          // cy.log(roomTypeText + " - " + roomType);
           cy.get('div[class="rmSelect__card--right"]')
             .eq(index1)
             .find("div[class='rmSelect__card--row ']")
@@ -76,7 +76,7 @@ class HotelPage {
                 cy.get('div[class="rmSelect__card--right"]')
                   .eq(index1)
                   .find(
-                    "div[class='rmSelect__card--row '] div[class=\"rmPayable \"] a p"
+                    "div[class='rmSelect__card--row '] div[class=\"rmPayable \"] a[data-testid]"
                   )
                   .eq(index2)
                   .scrollIntoView()

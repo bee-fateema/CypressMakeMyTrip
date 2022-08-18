@@ -12,7 +12,7 @@
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 Cypress.Commands.add("inputInfo", (infoId, infoValue) => {
-  cy.get(infoId).clear().type(infoValue).should("have.value", infoValue);
+  cy.get(infoId).clear().type(infoValue);
 });
 
 Cypress.Commands.add("hover", (selector) => {
@@ -22,6 +22,7 @@ Cypress.Commands.add("hover", (selector) => {
 Cypress.Commands.add("forceClick", (selector) => {
   cy.get(selector).click({ force: true });
 });
+
 //
 //
 // -- This is a child command --

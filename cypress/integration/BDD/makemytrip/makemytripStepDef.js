@@ -12,15 +12,7 @@ const hotelListPage = new HotelListPage();
 const reviewBookingPage = new ReviewBookingPage();
 const paymentPage = new PaymentPage();
 var totalAmount;
-let roomType,
-  roomCategory,
-  hotelName,
-  title,
-  firstname,
-  lastname,
-  emailId,
-  mobileNo,
-  dataValue;
+let roomType, roomCategory, hotelName, dataValue;
 
 Given("I open MakeMyTrip page", () => {
   basePage.visitHomePage();
@@ -59,7 +51,7 @@ Then("select hotel and verify hotel details", (dataTable) => {
   hotelName = dataTable.rawTable[1][0];
   hotelPage.selectAndVerifyHotelPrice(hotelName);
 });
-When("I click BOOK THIS NOW", () => {
+When("I click BOOK THIS NOW", { scrollBehaviour: "center" }, () => {
   hotelPage.getBookNowBtn();
 });
 When("I select room", { scrollBehaviour: true }, (dataTable) => {
@@ -67,19 +59,15 @@ When("I select room", { scrollBehaviour: true }, (dataTable) => {
   roomCategory = dataTable.rawTable[1][1];
   hotelPage.selectRoom(roomType, roomCategory);
 });
+
 And("enter contact information", (dataTable) => {
-  title = dataTable.rawTable[1][0];
-  firstname = dataTable.rawTable[1][1];
-  lastname = dataTable.rawTable[1][2];
-  emailId = dataTable.rawTable[1][3];
-  mobileNo = dataTable.rawTable[1][4];
-  reviewBookingPage.enterContactInfo(
-    title,
-    firstname,
-    lastname,
-    emailId,
-    mobileNo
-  );
+  dataTable.hashes().forEach((element) => {
+    for (var dataName in element) {
+      dataValue = element[dataName];
+      reviewBookingPage.enterContactInfo(dataName, dataValue);
+    }
+  });
+
   reviewBookingPage.getTotalAmount().then((total) => {
     const amount = total.text();
     totalAmount = amount.split(" ");

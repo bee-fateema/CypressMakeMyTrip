@@ -1,7 +1,6 @@
 class PaymentPage {
   constructor() {}
 
-  verifyDetails() {}
   verifyTotalAmount(totalAmount) {
     cy.get('div[class="fare__summary__card append-bottom20 font14"]').contains(
       "Total Due"

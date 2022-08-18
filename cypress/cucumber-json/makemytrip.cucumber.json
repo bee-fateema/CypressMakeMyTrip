@@ -22,7 +22,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 4111000000
+              "duration": 5250000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 445000000
+              "duration": 841000000
             }
           },
           {
@@ -42,16 +42,14 @@
                   {
                     "cells": [
                       "city",
-                      "checkInDate",
-                      "checkOutDate",
+                      "checkInDate & Nights",
                       "adults"
                     ]
                   },
                   {
                     "cells": [
                       "Bangkok",
-                      "Fri Aug 26 2022",
-                      "Sun Aug 28 2022",
+                      "2 weeks & 2",
                       "1"
                     ]
                   }
@@ -63,17 +61,17 @@
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 5876000000
+              "duration": 5970000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
+            "line": 13,
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 4586000000
+              "duration": 4077000000
             }
           },
           {
@@ -83,16 +81,14 @@
                   {
                     "cells": [
                       "city",
-                      "checkInDate",
-                      "checkOutDate",
+                      "checkInDate & Nights",
                       "adults"
                     ]
                   },
                   {
                     "cells": [
                       "Bangkok, Thailand",
-                      "Fri, 26 Aug 2022",
-                      "Sun, 28 Aug 2022",
+                      "2 weeks & 2",
                       "1"
                     ]
                   }
@@ -100,11 +96,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 12,
+            "line": 14,
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 240000000
+              "duration": 266000000
             }
           },
           {
@@ -125,11 +121,11 @@
               }
             ],
             "keyword": "When ",
-            "line": 15,
+            "line": 17,
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 4744000000
+              "duration": 5509000000
             }
           },
           {
@@ -150,21 +146,21 @@
               }
             ],
             "keyword": "Then ",
-            "line": 18,
+            "line": 20,
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 4293000000
+              "duration": 7322000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 23,
             "name": "I click BOOK THIS NOW",
             "result": {
               "status": "passed",
-              "duration": 1520000000
+              "duration": 643000000
             }
           },
           {
@@ -193,268 +189,30 @@
               }
             ],
             "keyword": "And ",
-            "line": 22,
+            "line": 24,
             "name": "enter contact information",
             "result": {
-              "status": "passed",
-              "duration": 11503000000
+              "status": "failed",
+              "duration": 8193000000,
+              "error_message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `#title`, but never found it.\n    at ReviewBookingPage.enterContactInfo (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:618:14)\n    at eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:112:25)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:109:22)\n    at Context.resolveAndRunStepDefinition (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:11086:29)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:10407:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 27,
             "name": "select pay now",
             "result": {
-              "status": "passed",
-              "duration": 6438000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
+            "line": 28,
             "name": "verify total Due",
             "result": {
-              "status": "passed",
-              "duration": 621000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "end-to-end-hotel-booking-validaiton;booking-hotel-with-specific-room-selection",
-        "keyword": "Scenario",
-        "line": 28,
-        "name": "Booking hotel with specific room selection",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I open MakeMyTrip page",
-            "result": {
-              "status": "passed",
-              "duration": 9575000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I select \"Hotels\" tab",
-            "result": {
-              "status": "passed",
-              "duration": 582000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "city",
-                      "checkInDate",
-                      "checkOutDate",
-                      "adults"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Goa",
-                      "Fri Aug 26 2022",
-                      "Sat Aug 27 2022",
-                      "1"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 29,
-            "name": "enter reservation details",
-            "result": {
-              "status": "passed",
-              "duration": 5286000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "select search button",
-            "result": {
-              "status": "passed",
-              "duration": 3567000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "city",
-                      "checkInDate",
-                      "checkOutDate",
-                      "adults"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Goa, India",
-                      "Fri, 26 Aug 2022",
-                      "Sat, 27 Aug 2022",
-                      "1"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 33,
-            "name": "verify details",
-            "result": {
-              "status": "passed",
-              "duration": 285000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "modificationFilter"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "MMT Luxe"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Beachfront"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 36,
-            "name": "I choose filter",
-            "result": {
-              "status": "passed",
-              "duration": 9399000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "hotelName"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Zuri White"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "select hotel and verify hotel details",
-            "result": {
-              "status": "passed",
-              "duration": 4092000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "roomType",
-                      "roomCategory"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Premium",
-                      "Breakfast"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 43,
-            "name": "I select room",
-            "result": {
-              "status": "passed",
-              "duration": 5755000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "title",
-                      "firstName",
-                      "lastName",
-                      "email",
-                      "mobileNo"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Mrs",
-                      "Bee Fateema",
-                      "T Shiras",
-                      "bts@gmail.com",
-                      "9876543219"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 46,
-            "name": "enter contact information",
-            "result": {
-              "status": "passed",
-              "duration": 8074000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "select pay now",
-            "result": {
-              "status": "passed",
-              "duration": 5993000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 50,
-            "name": "verify total Due",
-            "result": {
-              "status": "passed",
-              "duration": 342000000
+              "status": "skipped"
             }
           }
         ]
