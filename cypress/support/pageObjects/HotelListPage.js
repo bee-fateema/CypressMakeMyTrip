@@ -1,4 +1,6 @@
 import dayjs from "dayjs";
+import { Runnable } from "mocha";
+import { element } from "prop-types";
 class HotelListPage {
   constructor() {}
 
@@ -13,13 +15,10 @@ class HotelListPage {
         dateType = dataValue.split(" ");
         newdate = this.getDateOfBooking(dateType[0], dateType[1]);
         formattedCheckInDate = dayjs(newdate);
-        cy.get("input#checkin").should(
-          "have.value",
-          formattedCheckInDate.format("ddd, DD MMM YYYY")
-        );
+        this.verifyDate("input#checkin", formattedCheckInDate);
         //verify checkout date
         formattedCheckOutDate = this.getCheckOutDate(newdate, dateType[3]);
-        cy.get("input#checkout").should("have.value", formattedCheckOutDate);
+        this.verifyDate("input#checkout", formattedCheckOutDate);
         break;
       case "adults":
         cy.get("input#guest").should(
@@ -95,7 +94,29 @@ class HotelListPage {
         "-" +
         newdate1.getDate()
     );
-    return checkOut.format("ddd, DD MMM YYYY");
+    return checkOut;
+  }
+  checkDateFormat(date, dateFormat) {
+    if (date == dateFormat.format("ddd, D MMM YYYY")) {
+      return true;
+    }
+    return false;
+  }
+  verifyDate(selector, formattedDate) {
+    cy.get(selector).then((element) => {
+      const dateVal = element.val();
+      if (this.checkDateFormat(dateVal, formattedDate)) {
+        cy.get(selector).should(
+          "have.value",
+          formattedDate.format("ddd, D MMM YYYY")
+        );
+      } else {
+        cy.get(selector).should(
+          "have.value",
+          formattedDate.format("ddd, DD MMM YYYY")
+        );
+      }
+    });
   }
 }
 export default HotelListPage;

@@ -7,11 +7,11 @@ Feature: End to End Hotel Booking Validaiton
     Scenario: Booking hotel 
         And enter reservation details
         |city   |checkInDate & Nights|adults |
-        |Bangkok|2 weeks & 2         |1      |
+        |Bangkok|4 weeks & 1         |1      |
         And select search button 
         Then verify details
         |city               |checkInDate & Nights|adults |
-        |Bangkok, Thailand  |2 weeks & 2         |1      |
+        |Bangkok, Thailand  |4 weeks & 1         |1      |
         When I choose filter
         |modificationFilter |
         |4 Star             |

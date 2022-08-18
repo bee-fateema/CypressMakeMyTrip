@@ -22,7 +22,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 5250000000
+              "duration": 6014000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 841000000
+              "duration": 678000000
             }
           },
           {
@@ -49,7 +49,7 @@
                   {
                     "cells": [
                       "Bangkok",
-                      "2 weeks & 2",
+                      "4 weeks & 1",
                       "1"
                     ]
                   }
@@ -61,17 +61,17 @@
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 5970000000
+              "duration": 8431000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 11,
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 4077000000
+              "duration": 5156000000
             }
           },
           {
@@ -88,7 +88,7 @@
                   {
                     "cells": [
                       "Bangkok, Thailand",
-                      "2 weeks & 2",
+                      "4 weeks & 1",
                       "1"
                     ]
                   }
@@ -96,11 +96,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 14,
+            "line": 12,
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 266000000
+              "duration": 506000000
             }
           },
           {
@@ -121,11 +121,11 @@
               }
             ],
             "keyword": "When ",
-            "line": 17,
+            "line": 15,
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 5509000000
+              "duration": 6103000000
             }
           },
           {
@@ -146,21 +146,21 @@
               }
             ],
             "keyword": "Then ",
-            "line": 20,
+            "line": 18,
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 7322000000
+              "duration": 4270000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
+            "line": 21,
             "name": "I click BOOK THIS NOW",
             "result": {
               "status": "passed",
-              "duration": 643000000
+              "duration": 3988000000
             }
           },
           {
@@ -189,18 +189,18 @@
               }
             ],
             "keyword": "And ",
-            "line": 24,
+            "line": 22,
             "name": "enter contact information",
             "result": {
               "status": "failed",
-              "duration": 8193000000,
-              "error_message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `#title`, but never found it.\n    at ReviewBookingPage.enterContactInfo (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:618:14)\n    at eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:112:25)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:109:22)\n    at Context.resolveAndRunStepDefinition (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:11086:29)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:10407:35)"
+              "duration": 8315000000,
+              "error_message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `#title`, but never found it.\n    at ReviewBookingPage.enterContactInfo (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:651:14)\n    at eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:112:25)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:109:22)\n    at Context.resolveAndRunStepDefinition (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:11263:29)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:10584:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
+            "line": 25,
             "name": "select pay now",
             "result": {
               "status": "skipped"
@@ -209,7 +209,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 28,
+            "line": 26,
             "name": "verify total Due",
             "result": {
               "status": "skipped"
