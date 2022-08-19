@@ -1,6 +1,4 @@
 import dayjs from "dayjs";
-import { Runnable } from "mocha";
-import { element } from "prop-types";
 class HotelListPage {
   constructor() {}
 
@@ -16,6 +14,7 @@ class HotelListPage {
         newdate = this.getDateOfBooking(dateType[0], dateType[1]);
         formattedCheckInDate = dayjs(newdate);
         this.verifyDate("input#checkin", formattedCheckInDate);
+
         //verify checkout date
         formattedCheckOutDate = this.getCheckOutDate(newdate, dateType[3]);
         this.verifyDate("input#checkout", formattedCheckOutDate);

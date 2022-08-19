@@ -19,7 +19,7 @@ class BasePage {
         cy.forceClick('[data-cy="menu_' + tab + '"] > div > .makeFlex');
         break;
       case "Holiday Packages":
-        cy.forceClick('[data-cy="menu_Homestays"] > div > .makeFlex');
+        cy.forceClick('[data-cy="menu_Holidays"] > div > .makeFlex');
         break;
       default:
         cy.log("Invalid selection!!!");
