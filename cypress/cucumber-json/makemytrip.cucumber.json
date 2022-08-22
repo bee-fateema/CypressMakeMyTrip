@@ -22,7 +22,7 @@
             "name": "I open MakeMyTrip page",
             "result": {
               "status": "passed",
-              "duration": 6014000000
+              "duration": 7180000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I select \"Hotels\" tab",
             "result": {
               "status": "passed",
-              "duration": 678000000
+              "duration": 888000000
             }
           },
           {
@@ -61,7 +61,7 @@
             "name": "enter reservation details",
             "result": {
               "status": "passed",
-              "duration": 8431000000
+              "duration": 6800000000
             }
           },
           {
@@ -71,7 +71,7 @@
             "name": "select search button",
             "result": {
               "status": "passed",
-              "duration": 5156000000
+              "duration": 9846000000
             }
           },
           {
@@ -100,7 +100,7 @@
             "name": "verify details",
             "result": {
               "status": "passed",
-              "duration": 506000000
+              "duration": 400000000
             }
           },
           {
@@ -125,7 +125,7 @@
             "name": "I choose filter",
             "result": {
               "status": "passed",
-              "duration": 6103000000
+              "duration": 5901000000
             }
           },
           {
@@ -150,7 +150,7 @@
             "name": "select hotel and verify hotel details",
             "result": {
               "status": "passed",
-              "duration": 4270000000
+              "duration": 2773000000
             }
           },
           {
@@ -160,7 +160,7 @@
             "name": "I click BOOK THIS NOW",
             "result": {
               "status": "passed",
-              "duration": 3988000000
+              "duration": 103000000
             }
           },
           {
@@ -193,8 +193,8 @@
             "name": "enter contact information",
             "result": {
               "status": "failed",
-              "duration": 8315000000,
-              "error_message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `#title`, but never found it.\n    at ReviewBookingPage.enterContactInfo (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:651:14)\n    at eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:112:25)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:109:22)\n    at Context.resolveAndRunStepDefinition (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:11263:29)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:10584:35)"
+              "duration": 8167000000,
+              "error_message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `#title`, but never found it.\n    at ReviewBookingPage.enterContactInfo (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:647:14)\n    at eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:112:25)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:109:22)\n    at Context.resolveAndRunStepDefinition (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:11115:29)\n    at Context.eval (https://www.makemytrip.com/__cypress/tests?p=cypress\\integration\\BDD\\makemytrip.feature:10436:35)"
             }
           },
           {
